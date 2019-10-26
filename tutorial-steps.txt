@@ -1,0 +1,17 @@
+# [1] - Basic REST API
+$ python3 --version
+$ pip3 install pipenv
+$ pipenv shell
+
+> pipenv install django djangorestframework django-rest-knox
+> django-admin startproject <project-name>
+> cd <project-name>
+> python manage.py startapp <app-name>
+# update settings.py with created apps, dependencies, etc.
+> creating model
+> python manage.py makemigrations <app-name>
+> python manage.py migrate
+
+
+
+
