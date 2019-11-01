@@ -7,7 +7,7 @@ class Form extends Component {
     state = {
         name: '',
         email: '',
-        message: '',
+        message: ''
     };
 
     static propTypes = {
@@ -23,6 +23,11 @@ class Form extends Component {
         const lead = {name, email, message};
 
         this.props.addLead(lead);
+        this.setState({
+            name: '',
+            email: '',
+            message: ''
+        })
     };
 
     render() {
